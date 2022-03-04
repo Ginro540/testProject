@@ -171,7 +171,6 @@
 				FA6A3F745E167BF4C472A9B8 /* Pods-aaaa.debug.xcconfig */,
 				97CD33F532CEAA91B1AC32E9 /* Pods-aaaa.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -270,7 +269,7 @@
 			);
 			mainGroup = A40E56B227CE732F005F3F0B;
 			packageReferences = (
-				A4ADC20C27D0BA0E00DE243F /* XCRemoteSwiftPackageReference "APIKit.git" */,
+				A4ADC20C27D0BA0E00DE243F /* XCRemoteSwiftPackageReference "APIKit" */,
 			);
 			productRefGroup = A40E56BC27CE732F005F3F0B /* Products */;
 			projectDirPath = "";
@@ -524,7 +523,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -541,6 +540,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8S589C7SU7;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = aaaa/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -708,7 +708,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A4ADC20C27D0BA0E00DE243F /* XCRemoteSwiftPackageReference "APIKit.git" */ = {
+		A4ADC20C27D0BA0E00DE243F /* XCRemoteSwiftPackageReference "APIKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ishkawa/APIKit.git";
 			requirement = {
@@ -721,7 +721,7 @@
 /* Begin XCSwiftPackageProductDependency section */
 		A4ADC20D27D0BA0E00DE243F /* APIKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A4ADC20C27D0BA0E00DE243F /* XCRemoteSwiftPackageReference "APIKit.git" */;
+			package = A4ADC20C27D0BA0E00DE243F /* XCRemoteSwiftPackageReference "APIKit" */;
 			productName = APIKit;
 		};
 /* End XCSwiftPackageProductDependency section */
